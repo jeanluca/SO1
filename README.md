@@ -1,4 +1,6 @@
-SO1---Escalonamentos
-====================
-
-Trabalho Sistemas Operacionais I - Escalonamentos
+======================================================
+                Sitemas Operacionais I                
+                       Trabalho                       
+------------------------------------------------------
+              Algoritmos de Escalonamento             
+======================================================
