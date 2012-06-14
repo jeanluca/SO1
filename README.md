@@ -1,6 +1,6 @@
 ======================================================
-                Sitemas Operacionais I                
-                       Trabalho                       
+Sitemas Operacionais I
+Trabalho                       
 ------------------------------------------------------
-              Algoritmos de Escalonamento             
+ALGORITMOS DE ESCALONAMENTO
 ======================================================
