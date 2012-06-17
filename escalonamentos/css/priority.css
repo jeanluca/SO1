@@ -1,0 +1,92 @@
+/* 
+    Document   : style
+    Created on : 13/05/2012, 13:48:16
+    Author     : Jessica
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    background: url('../img/pattern.png') #d9d9d9 repeat-x center;
+}
+
+@font-face {
+    font-family: 'OpticonOne1';
+    src: url('../fonts/opticonone-webfont.eot');
+    src: url('../fonts/opticonone-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opticonone-webfont.woff') format('woff'),
+         url('../fonts/opticonone-webfont.ttf') format('truetype'),
+         url('../fonts/opticonone-webfont.svg#OpticonOne1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BrawlerRegular';
+    src: url('../fonts/Brawler-webfont.eot');
+    src: url('../fonts/Brawler-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Brawler-webfont.woff') format('woff'),
+         url('../fonts/Brawler-webfont.ttf') format('truetype'),
+         url('../fonts/Brawler-webfont.svg#BrawlerRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.content{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#header{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    cursor: default;
+    font-family: 'OpticonOne1';
+    letter-spacing: 10px;
+    line-height: 35px;
+    margin: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+#header h1{
+    font-size: 15px;
+}
+
+#header h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#coming-soon{
+    font-family: 'BrawlerRegular';
+    font-size: 14px;
+    line-height: 17px;
+    margin: 50px 0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#coming-soon h3{
+    font-family: 'OpticonOne1';
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#coming-soon p{
+    margin: 20px 0;
+}
+
+#coming-soon a{
+    color: #3e3e3e;
+}

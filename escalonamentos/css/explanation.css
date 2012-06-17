@@ -1,0 +1,49 @@
+/* 
+    Document   : explanation
+    Created on : 13/05/2012, 13:48:16
+    Author     : Jean
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    background: #F9F9F9;
+    font-family: 'BrawlerRegular';
+    font-size: 14px;
+    height: 500px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'BrawlerRegular';
+    src: url('../fonts/Brawler-webfont.eot');
+    src: url('../fonts/Brawler-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Brawler-webfont.woff') format('woff'),
+         url('../fonts/Brawler-webfont.ttf') format('truetype'),
+         url('../fonts/Brawler-webfont.svg#BrawlerRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+#explanation{
+    text-align: justify;
+}
+
+#explanation h1{
+    text-align: center;
+}
+
+#round-robin-exemple{
+    float: left;
+    margin: 45px 0;
+}
+
+#fcfs-exemple{
+    text-align: center;
+}

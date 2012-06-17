@@ -1,0 +1,395 @@
+/* 
+    Document   : style
+    Created on : 13/05/2012, 13:48:16
+    Author     : Jessica
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    background: url('../img/pattern.png') #d9d9d9 repeat-x center;
+}
+
+@font-face {
+    font-family: 'OpticonOne1';
+    src: url('../fonts/opticonone-webfont.eot');
+    src: url('../fonts/opticonone-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opticonone-webfont.woff') format('woff'),
+         url('../fonts/opticonone-webfont.ttf') format('truetype'),
+         url('../fonts/opticonone-webfont.svg#OpticonOne1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BrawlerRegular';
+    src: url('../fonts/Brawler-webfont.eot');
+    src: url('../fonts/Brawler-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Brawler-webfont.woff') format('woff'),
+         url('../fonts/Brawler-webfont.ttf') format('truetype'),
+         url('../fonts/Brawler-webfont.svg#BrawlerRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.content{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#header{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    cursor: default;
+    font-family: 'OpticonOne1';
+    letter-spacing: 10px;
+    line-height: 35px;
+    margin: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+#header h1{
+    font-size: 15px;
+}
+
+#header h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/**
+ * Menu geral da aplicação
+ */
+#app-menu{
+    
+}
+
+#app-menu li span, #app-menu a{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: 'BrawlerRegular';
+    font-size: 10px;
+    float: left;
+    letter-spacing: 3px;
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#app-menu li span{
+    background: #858282;
+    background-clip: padding-box;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#app-menu li a{
+    background: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ADADAD;
+    color: #858282;
+}
+
+#app-menu li a:hover{
+    background: #858282;
+    background-clip: padding-box;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/**
+ * Divisões principais
+ */
+.left-side{
+    float: left;
+    width: 190px;
+}
+
+.middle-side{
+    float: left;
+    width: 450px;   
+}
+
+.right-side{
+    float: right;
+    width: 210px;
+}
+
+#menu{
+    float: left;
+    margin: 0 15px 0 0;
+    width: 150px;
+}
+
+#configurations{
+    font-family: 'BrawlerRegular';
+    font-size: 12px;
+    float: left;
+    margin: 20px 0 0;
+}
+
+#configurations strong{
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin: 10px 0;
+}
+
+#configurations label{
+    display: block;
+    margin: 12px 0 10px 0;
+}
+
+#configurations input{
+    -webkit-border-radius: 5px;
+    border: #eee solid 1px;
+    border-radius: 5px;
+    padding: 5px 0;
+    text-align: center;
+    width: 150px;
+}
+
+#draggable-area{
+    -webkit-border-radius: 5px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    background: #fff;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    cursor: default;
+    float: left;
+    height: 450px;
+    user-select: none;
+    width: 1000px;
+}
+
+#draggable-area p{
+    color: #858282;
+    font-family: 'BrawlerRegular';
+    font-size: 15px;
+}
+
+.draggable-area-content{
+    height: 325px;
+    margin: 0 55px;
+    width: 890px;
+}
+
+.draggable, .inactive{ 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    float: left;
+    font-family: 'BrawlerRegular';
+    font-size: 18px;
+    height: 20px;
+    margin: 0 5px 5px 0;
+    padding: 15px;
+    text-align: center;
+    width: 20px;
+}
+
+.draggable{
+    cursor: move;
+}
+
+.place{
+    -webkit-border-radius: 5px;
+    background: #eee;
+    border-radius: 5px;
+    border: #ADADAD dashed 1px;
+    color: #ffffff;
+    float: left;
+    height: 20px;
+    margin: 0 5px 5px 0;
+    padding: 15px;
+    width: 20px;
+}
+
+#processor{
+    -webkit-border-radius: 5px;
+    background: #858282;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    height: 180px;
+    list-style: none;
+    margin: 40px 0 0;
+    width: 150px;
+}
+
+#processor span{
+    color: #ffffff;
+    font-family: 'BrawlerRegular';
+    font-size: 35px;
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+
+#processor h2{
+    color: #ffffff;
+    font-family: 'OpticonOne1';
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#processor ul{
+    -webkit-border-radius: 5px;
+    background: #CDCDCD;
+    border-radius: 5px;
+    display: block;
+    font-family: 'OpticonOne1';
+    float: left;
+    height: 50px;
+    margin: 28px 50px;
+    width: 50px;
+}
+
+#processor li{
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'BrawlerRegular';
+    float: left;
+    font-size: 18px;
+    height: 20px;
+    padding: 15px;
+    text-align: center;
+    width: 20px;
+}
+
+#p1, #g1{ background: #f14833; }
+#p2, #g2{ background: #498bf4; }
+#p3, #g3{ background: #72d73a; }
+#p4, #g4{ background: #efe32b; }
+#p5, #g5{ background: #e6327a; }
+#p6, #g6{ background: #F59B33; }
+#p7, #g7{ background: #BE33F5; }
+#p8, #g8{ background: #3ADEBA; }
+#p9, #g9{ background: #607B8B; }
+
+.ready-box, .graph-box{
+    float: left;
+    margin: 40px 0 0;
+}
+
+.blocked-box, .finished-box{
+    float: left;
+    margin: 28px 0 0;
+}
+
+.ready-box h1, .blocked-box h1, .finished-box h1, .graph-box h1{
+    font-family: 'OpticonOne1';
+    font-size: 10px;
+    letter-spacing: 3px;
+    padding: 0 0 5px 0;
+    text-transform: uppercase;
+}
+
+#ready{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: #ADADAD solid 1px;
+    float: left;
+    height: 105px;
+    list-style: none;
+    padding: 5px 0 5px 5px;
+    width: 710px;
+}
+
+#blocked, #finished{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: #ADADAD solid 1px;
+    float: left;
+    height: 105px;
+    list-style: none;
+    padding: 5px 0 5px 5px;
+    width: 710px;
+}
+
+#finished li{
+    font-family: 'OpticonOne1';
+}
+
+#message{
+    background: #F7F7F7;
+    border-bottom: #858282 solid 1px;
+    border-top: #858282 solid 1px;
+    color: #858282;
+    font-family: 'BrawlerRegular';
+    font-size: 15px;
+    padding: 5px;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+.done{
+    border: #ffffff solid 2px;
+    cursor: pointer;
+    height: 16px!important;
+    width: 16px!important;
+}
+
+#graph{
+    
+}
+
+#graph li{
+    height: 35px;
+}
+
+#graph li span{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: #ADADAD solid 1px;
+    font-family: 'OpticonOne1';
+    font-size: 10px;
+    float: left;
+    display: block;
+    height: 16px;
+    margin: 5px 5px 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 7px 0 0 0;
+    width: 23px;
+}
+
+#graph li div.graph-mark{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: #ADADAD solid 1px;
+    float: left;
+    height: 25px;
+    margin: 5px 0 0;
+    overflow: hidden;
+}
+
+#graph li div.graph-mark div{
+    float: left;
+    height: 25px;
+}
+
+#game-over{
+    display: none;
+}

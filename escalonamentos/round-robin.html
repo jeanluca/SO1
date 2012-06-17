@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Algoritmos de Escalonamento - Round Robin</title>
+        <link href="robin.ico" type="image/x-icon" rel="icon" />
+        <link href="robin.ico" type="image/x-icon" rel="shortcut icon" />        
+
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <meta name="author" content="Eduardo Quevedo, Jean Bez, Jéssica Muraro" />
+        <meta name="description" content="Algoritmos de Escalonamento" />
+        <meta name="keywords" content="Algoritmos de Escalonamento, Circular, Round-Robin, Shortest Job First, Loteria, Prioridade" />
+        <meta name="revisit-after" content="1 days" />
+
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/round-robin.css" />
+        <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+        
+        <noscript>
+            <meta http-equiv="Refresh" content="0; url=requirements.html">
+        </noscript>
+
+        <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
+        <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+
+        <script type="text/javascript" src="js/round-robin.js"></script>
+    </head>
+    <body>
+
+        <div class="content">
+
+            <div id="header">
+                <h1>Algoritmos de Escalonamento</h1>
+                <h2>Round-Robin</h2>
+            </div>
+            
+            <div id="app-menu">
+                <ul>
+                    <li>
+                        <a href="index.html" id="app-menu-home">Home</a>
+                    </li>
+                    <li>
+                        <a href="" id="add-process">Adicionar</a>
+                    </li>
+                    <li>
+                        <a href="" id="app-menu-video">Vídeo</a>
+                    </li>
+                    <li>
+                        <a href="explanation-round-robin.html" id="app-menu-explanation">Explicação</a>
+                    </li>
+                    <li>
+                        <a href="" id="app-menu-reset">Reiniciar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="draggable-area">
+
+                <div id="message">
+                    Processador está livre para execução.
+                </div>
+                
+                <div class="draggable-area-content">
+                    <!--<p>Você é o escalonador, arraste o próximo processo para o processador.</p>-->
+
+                    <div class="left-side">
+
+                        <div id="processor" class="sortable">
+                            <span>0ms</span>
+                            <h2>Processador</h2>
+
+                            <ul>
+
+                            </ul>
+                        </div>
+
+                        <div id="menu">
+                            <form name="configurations" id="configurations">
+
+                                <strong>CONFIGURAÇÕES</strong>
+
+                                <label>Quantum:</label>
+                                <input type="text" id="quantum" name="quantum" value="10" maxlength="2" onBlur="validateQuantum(this)" />
+
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="middle-side">
+
+                        <div class="ready-box">
+                            <h1>Fila de Prontos</h1>
+
+                            <ul id="ready" class="sortable">
+                                <!--<li id="p1" class="draggable">8</li>
+                                <li id="p2" class="draggable">12</li>
+                                <li id="p3" class="draggable">2</li>
+                                <li id="p4" class="draggable">10</li>
+                                <li id="p5" class="draggable">15</li>
+                                <li id="p6" class="draggable">7</li>
+                                <li id="p7" class="draggable">3</li>
+                                <li id="p8" class="draggable">13</li>-->
+                            </ul>
+                        </div>
+
+                        <div class="blocked-box">
+                            <h1>Bloqueados</h1>
+
+                            <ul id="blocked">
+
+                            </ul>
+                        </div>
+
+                        <div class="finished-box">
+                            <h1>Concluídos</h1>
+
+                            <ul id="finished">
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="right-side">                        
+                        <div class="graph-box">
+                            <h1>Processos</h1>
+
+                            <ul id="graph">
+                                <li>
+                                    <span>P1</span>
+                                    <div class="graph-mark">
+                                        <div id="g1"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>P2</span>
+                                    <div class="graph-mark">
+                                        <div id="g2"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>P3</span>
+                                    <div class="graph-mark">
+                                        <div id="g3"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>P4</span>
+                                    <div class="graph-mark">
+                                        <div id="g4"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>P5</span>
+                                    <div class="graph-mark">
+                                        <div id="g5"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>P6</span>
+                                    <div class="graph-mark">
+                                        <div id="g6"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>P7</span>
+                                    <div class="graph-mark">
+                                        <div id="g7"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>P8</span>
+                                    <div class="graph-mark">
+                                        <div id="g8"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+        
+        <a href="game-over-round-robin.html" id="game-over"></a>
+
+    </body>
+</html>

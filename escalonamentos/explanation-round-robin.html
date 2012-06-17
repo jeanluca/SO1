@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Algoritmos de Escalonamento</title>
+        <link href="robin.ico" type="image/x-icon" rel="icon" />
+        <link href="robin.ico" type="image/x-icon" rel="shortcut icon" />        
+
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <meta name="author" content="Eduardo Quevedo, Jean Bez, Jéssica Muraro" />
+        <meta name="description" content="Algoritmos de Escalonamento" />
+        <meta name="keywords" content="Algoritmos de Escalonamento, Circular, Round-Robin, Shortest Job First, Loteria, Prioridade" />
+        <meta name="revisit-after" content="1 days" />
+
+        <link rel="stylesheet" type="text/css" href="css/explanation.css" />
+    </head>
+    <body>
+
+        <div id="explanation">
+            <h1>Escalonamento Round-Robin</h1>
+
+            <p>
+                Um dos algoritmos mais antigos, simples, justos e amplamente
+                usados é o <strong>circular</strong>. A cada processo é atribuído
+                um intervalo de tempo, o seu <strong>quantum</strong>, no qual
+                ele é permitido executar.
+            </p>
+
+            <p>
+                Se, ao final do <strong>quantum</strong>, o processo ainda
+                estiver executando, a CPU sofrerá preempção e será dada a outro
+                processo. Se o processo foi bloqueado ou terminou antes que o 
+                <strong>quantum</strong> tenha decorrido, a CPU é chaveada para
+                outro processo, e ele é colocado no <i>pool</i> de bloqueados.
+            </p>
+            
+            <img id="round-robin-exemple" src="img/round-robin-exemple.jpg" alt="Round-Robin Exemple"/>
+
+            <h2>Implementação</h2>
+
+            <p>
+                O escalonamento circular é fácil de implementar. O escalonador
+                só precisa manter uma lista de processos executáveis 
+                (fila de prontos). Quando o processo usa todo o seu
+                <strong>quantum</strong>, ele é colocado no final da lista.
+            </p>
+            
+            <h2>Chaveamento de Processo</h2>
+            
+            <p>
+                O que interessa para o escalonamento circular é o tamanho do
+                <strong>quantum</strong>. O chaveamento de um processo para 
+                outro requer uma certa quantidade de tempo para a sua 
+                administração - salvar e carregar registradores e mapas de
+                memória, atualizar várias listas e tabelas, carregar e
+                descarregar a memória cache, etc.
+            </p>
+        </div>
+
+    </body>
+</html>

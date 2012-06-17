@@ -1,0 +1,190 @@
+/* 
+    Document   : style
+    Created on : 25/05/2012, 10:06:06
+    Author     : Jessica
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    background: url('../img/main-pattern.png') #5e98a2 repeat-x center;
+}
+
+@font-face {
+    font-family: 'OpticonOne1';
+    src: url('../fonts/opticonone-webfont.eot');
+    src: url('../fonts/opticonone-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opticonone-webfont.woff') format('woff'),
+         url('../fonts/opticonone-webfont.ttf') format('truetype'),
+         url('../fonts/opticonone-webfont.svg#OpticonOne1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'BrawlerRegular';
+    src: url('../fonts/Brawler-webfont.eot');
+    src: url('../fonts/Brawler-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Brawler-webfont.woff') format('woff'),
+         url('../fonts/Brawler-webfont.ttf') format('truetype'),
+         url('../fonts/Brawler-webfont.svg#BrawlerRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+    outline: none;
+}
+
+.content{    
+    margin: 0 auto;
+    width: 1000px;
+    min-height: 620px;
+    background: url('../img/track.png') no-repeat 110px 200px;
+    position: relative;    
+}
+
+#header{
+    cursor: default;
+    font-family: 'OpticonOne1';
+    letter-spacing: 10px;
+    line-height: 35px;
+    margin: 40px 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+#header h1{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#header h2{
+    font-family: 'BrawlerRegular';
+    letter-spacing: 5px;
+    line-height: 0px;
+    margin: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* Processos */
+
+#fcfs{    
+    position: absolute;
+    top: 240px;
+    left: 0px; 
+}
+
+#fcfs-text{
+    font-family: 'BrawlerRegular';
+    position: relative;
+    font-size: 12px;
+    top: 5px;
+    left: 110px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#sjf{
+    position: absolute;
+    top: 100px;
+    left: 260px;
+}
+
+#sjf-text{
+    font-family: 'BrawlerRegular';
+    position: relative;
+    font-size: 12px;
+    top: 15px;
+    left: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#round-robin{
+    position: absolute;
+    top: 260px;
+    left: 545px;
+}
+
+#round-robin-text{
+    font-family: 'BrawlerRegular';
+    position: relative;
+    font-size: 12px;
+    top: 10px;
+    left: 75px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#priority{
+    position: absolute;
+    top: 130px;
+    left: 805px;
+}
+
+#priority-text{
+    font-family: 'BrawlerRegular';
+    position: relative;
+    font-size: 12px;
+    top: 15px;
+    left: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#footer{
+    font-family: 'BrawlerRegular';
+    font-size: 12px;
+    color: #ffffff;
+    border-top: #ffffff solid 1px;
+    padding: 10px;
+    margin: 500px 0 0;
+    text-align: center;
+}
+
+#game-over-page{
+    overflow: hidden;
+}
+
+#game-over{
+    color: #fff;
+    font-family: 'BrawlerRegular';
+    font-size: 14px;
+    height: 300px;
+    padding: 50px;
+    text-align: center;
+    width: 300px;
+}
+
+#game-over h1{
+    font-size: 50px;
+    margin: 0 0 30px;
+}
+
+#game-over p{
+    border-bottom: #fff solid 1px;
+    border-top: #fff solid 1px;
+    padding: 20px 0;
+    margin: 0 0 30px;
+}
+
+#game-over a{
+    background: #fff;
+    border-radius: 5px;
+    color: #5e98a2;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#html5{
+    position: absolute;
+    right: 10px;
+    top: 441px;
+    width: 38px;
+}

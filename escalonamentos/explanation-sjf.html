@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Algoritmos de Escalonamento</title>
+        <link href="sjf.ico" type="image/x-icon" rel="icon" />
+        <link href="sjf.ico" type="image/x-icon" rel="shortcut icon" />        
+
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <meta name="author" content="Eduardo Quevedo, Jean Bez, Jéssica Muraro" />
+        <meta name="description" content="Algoritmos de Escalonamento" />
+        <meta name="keywords" content="Algoritmos de Escalonamento, Circular, Round-Robin, Shortest Job First, Loteria, Prioridade" />
+        <meta name="revisit-after" content="1 days" />
+
+        <link rel="stylesheet" type="text/css" href="css/explanation.css" />
+    </head>
+    <body>
+
+        <div id="explanation">
+            <h1>Escalonamento Shortest Job First</h1>
+
+            <p>
+                O algoritmo da Tarefa Mais Curto Primeiro <i>(Shortest Job First)</i> 
+                é um algoritmo em lote não preemptivo que supõe como previamente
+                conhecidos todos os tempos de execução.
+            </p>
+
+            <p>
+                Quando várias tarefas igualmente importantes estiverem postadas
+                na fila de entrada à espera de serem iniciados, o escalonador
+                escolhe a <strong>Tarefa Mais Curta Primeiro</strong>.
+            </p>
+            
+            <img id="round-robin-exemple" src="img/sjf-exemple.jpg" alt="Shortest Job First Exemple"/>
+
+            <h2>Tempo Médio de Retorno</h2>
+
+            <p>
+                Considere o caso de 4 tarefas, com tempos de execução 
+                <i>a</i>, <i>b</i>, <i>c</i> e <i>d</i>, respectivamente.
+                A primeira tarefa termina no tempo <i>a</i>, a segunda no tempo 
+                <i>a</i> + <i>b</i> e assim por diante. O tempo médio de retorno
+                é: <strong><i>(4a + 3b + 2c + d)/4</i></strong>.
+            </p>
+            
+            <h2>Comparação</h2>
+            
+            <p>
+                Na parte superior da figura é mostrado a execução de quatro 
+                tarefas na ordem original. Já na parte inferior, é possível
+                observar a execução na ordem <i>tarefa mais curta primeiro</i>.
+            </p>
+        </div>
+
+    </body>
+</html>
