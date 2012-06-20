@@ -44,6 +44,10 @@ a{
 }
 
 #header{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
     cursor: default;
     font-family: 'OpticonOne1';
     letter-spacing: 10px;
@@ -71,6 +75,8 @@ a{
 }
 
 #app-menu li span, #app-menu a{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     font-family: 'BrawlerRegular';
     font-size: 10px;
@@ -146,6 +152,7 @@ a{
 }
 
 #configurations input{
+    -webkit-border-radius: 5px;
     border: #eee solid 1px;
     border-radius: 5px;
     padding: 5px 0;
@@ -154,6 +161,11 @@ a{
 }
 
 #draggable-area{
+    -webkit-border-radius: 5px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
     background: #fff;
     border: 1px solid #ADADAD;
     border-radius: 5px;
@@ -177,6 +189,7 @@ a{
 }
 
 .draggable, .inactive{ 
+    -webkit-border-radius: 5px;
     border-radius: 5px;
     color: #ffffff;
     float: left;
@@ -194,6 +207,7 @@ a{
 }
 
 .place{
+    -webkit-border-radius: 5px;
     background: #eee;
     border-radius: 5px;
     border: #ADADAD dashed 1px;
@@ -206,6 +220,7 @@ a{
 }
 
 #processor{
+    -webkit-border-radius: 5px;
     background: #858282;
     border-radius: 5px;
     display: block;
@@ -235,6 +250,7 @@ a{
 }
 
 #processor ul{
+    -webkit-border-radius: 5px;
     background: #CDCDCD;
     border-radius: 5px;
     display: block;
@@ -246,6 +262,7 @@ a{
 }
 
 #processor li{
+    -webkit-border-radius: 5px;
     border-radius: 5px;
     color: #ffffff;
     font-family: 'BrawlerRegular';
@@ -286,6 +303,8 @@ a{
 }
 
 #ready{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     border: #ADADAD solid 1px;
     float: left;
@@ -296,6 +315,8 @@ a{
 }
 
 #blocked, #finished{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     border: #ADADAD solid 1px;
     float: left;
@@ -337,6 +358,8 @@ a{
 }
 
 #graph li span{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     border: #ADADAD solid 1px;
     font-family: 'OpticonOne1';
@@ -352,6 +375,8 @@ a{
 }
 
 #graph li div.graph-mark{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     border: #ADADAD solid 1px;
     float: left;
